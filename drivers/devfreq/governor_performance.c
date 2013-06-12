@@ -43,6 +43,8 @@ static int devfreq_performance_handler(struct devfreq *devfreq,
 				DEVFREQ_FLAG_WAKEUP_MAXFREQ);
 		/* fall through */
 	case DEVFREQ_GOV_RESUME:
+	if (event == DEVFREQ_GOV_START || event == DEVFREQ_GOV_RESUME) {
+		mutex_lock(&devfreq->lock);
 		ret = update_devfreq(devfreq);
 		break;
 	case DEVFREQ_GOV_SUSPEND:
