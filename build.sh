@@ -23,16 +23,16 @@
 ############################################################ 
 
 # Source defconfig used to build
-	dc=schwifty_defconfig
+	dc=tinyrick_axon7_defconfig
 
 # Source Path to kernel tree
-	k=$HOME/op6
+	k=$HOME/axon7-msm-3.18
 
 # Source Path to clean(empty) out folder
 	co=$k/out
 
 # Compile Path to out 
-	o="O=$HOME/op6/out"
+	o="O=$HOME/axon7-msm-3.18/out"
 
 # Source Path to compiled Image.gz-dtb
 	i=$k/out/arch/arm64/boot/Image.gz-dtb

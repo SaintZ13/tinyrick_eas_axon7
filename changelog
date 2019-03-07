@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Exports
-dir=$HOME/op6/build
+dir=$HOME/axon7-msm-3.18/build
 
 export Changelog=$dir/Changelog.txt
 

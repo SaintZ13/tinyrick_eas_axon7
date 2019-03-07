@@ -152,9 +152,6 @@ SYSCALL_DEFINE1(syncfs, int, fd)
 	struct super_block *sb;
 	int ret;
 
-	if (!fsync_enabled)
-		return 0;
-
 	f = fdget(fd);
 	if (!f.file)
 		return -EBADF;
