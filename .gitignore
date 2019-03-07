@@ -96,3 +96,42 @@ x509.genkey
 
 # Kconfig presets
 all.config
+
+# Kdevelop4
+*.kdev4
+
+*.rej
+*.diff
+*.patch
+*.list
+out/*
+scripts/rkp_cfp/tmp/*
+
+# fetched Android config fragments
+kernel/configs/android-*.cfg
+build/Changelog\.txt
+out
+build/Image\.gz-dtb
+
+upload/
+# Leave out building folders
+build/
+out/
+prebuilts/
+
+# Linux Scripts
+/bin
+/os
+/snippets
+bin/
+os/
+snippets/
+LICENSE
+README.md
+als
+build-clang
+build-kernel
+common
+flash-kernel
+merge-stable
+pi-kernel
